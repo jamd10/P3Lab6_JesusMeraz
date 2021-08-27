@@ -8,8 +8,11 @@ class STRING
 {
 private:
     string cadena;
-
+	vector <STRING> lista;
 public:
+	void agregar(STRING);
+	vector<STRING> getVector();
+	void imprimir();
     STRING();
     STRING(string);
     string getCadena();

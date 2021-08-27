@@ -8,6 +8,8 @@ using namespace std;
 int menu();
 int main(int argc, char** argv) {
 	INTEGER* lista = new INTEGER();
+	CHAR* lista = new CHAR();
+	STRING* lista = new STRING();
 	int op = menu();
 	while(op != 7){
 		switch(op){
@@ -193,6 +195,9 @@ int main(int argc, char** argv) {
 		}
 		op = menu();
 	}
+	delete[]INTEGER;
+	delete[]CHAR;
+	delete[]STRING;
 	return 0;
 }
 int menu(){
